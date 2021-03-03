@@ -7,6 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./libraries/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./libraries/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./assets/style.css">
 
     <title>Home | Mang Agus</title>
@@ -40,28 +43,34 @@
       </div>
     </nav>
 
-    <section class="container mt-3" id="section-product">
-      <div class="title-section card-body card">
-        <h5>PRODUK</h5>
-      </div>
+    <section class="container mt-3" id="section-detail-product">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Kategori</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+          </ol>
+        </nav>
       <div class="body-section row mt-3">
-        <div class="col-md-4 col-lg-3 mb-3">
-          <a href="detail.html" class="detail-product">
+        <div class="col-md-6 mb-3">
           <div class="card">
-            <div class="container-img-product">
-              <img src="https://source.unsplash.com/768x580/?vegetable,buah,spinach" class="card-img-top" alt="sayur mang agus bekasi">
-            </div>
             <div class="card-body">
-              <div class="container-card-text mb-2">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="slider slider-for mb-3">
+                <div class="container-img-detail-product"><img src="https://source.unsplash.com/500x500/?vegetable,buah" alt=""></div>
+                <div class="container-img-detail-product"><img src="https://source.unsplash.com/780x580/?vegetable,buah" alt=""></div>
+                <div class="container-img-detail-product"><img src="https://source.unsplash.com/400x400/?vegetable,buah" alt=""></div>
               </div>
-              <p class="card-price text-danger fw-bold">Rp. 7.999</p>
+
+              <div class="slider slider-nav">
+                <div class="container-img-detail-product"><img src="https://source.unsplash.com/500x500/?vegetable,buah" alt=""></div>
+                <div class="container-img-detail-product"><img src="https://source.unsplash.com/780x580/?vegetable,buah" alt=""></div>
+                <div class="container-img-detail-product"><img src="https://source.unsplash.com/400x400/?vegetable,buah" alt=""></div>
+              </div>
             </div>
           </div>
-          </a>
         </div>
         <div class="col-md-4 col-lg-3 mb-3">
-          <a href="detail.html" class="detail-product">
+          <a href="aaaa" class="detail-product">
           <div class="card">
             <div class="container-img-product">
               <img src="https://source.unsplash.com/1000x580/?vegetable,buah,spinach" class="card-img-top" alt="sayur mang agus bekasi">
@@ -69,36 +78,6 @@
             <div class="card-body">
               <div class="container-card-text mb-2">
                 <p class="card-text">[KIRIM INSTANT] SAORI SAUS TIRAM [23ml] SACHET - ORIENTAL.</p>
-              </div>
-              <p class="card-price text-danger fw-bold">Rp. 7.999</p>
-            </div>
-          </div>
-          </a>
-        </div>
-        <div class="col-md-4 col-lg-3 mb-3">
-          <a href="detail.html" class="detail-product">
-          <div class="card">
-            <div class="container-img-product">
-              <img src="https://source.unsplash.com/768x580/?vegetable,buah,spinach" class="card-img-top img-fluid" alt="sayur mang agus bekasi">
-            </div>
-            <div class="card-body">
-              <div class="container-card-text mb-2">
-                <p class="card-text">[KIRIM INSTANT] BAWANG BOMBAI [1 Buah, ±150g].</p>
-              </div>
-              <p class="card-price text-danger fw-bold">Rp. 7.999</p>
-            </div>
-          </div>
-          </a>
-        </div>
-        <div class="col-md-4 col-lg-3 mb-3">
-          <a href="detail.html" class="detail-product">
-          <div class="card">
-            <div class="container-img-product">
-              <img src="https://source.unsplash.com/768x580/?vegetable,buah,spinach" class="card-img-top img-fluid" alt="sayur mang agus bekasi">
-            </div>
-            <div class="card-body">
-              <div class="container-card-text mb-2">
-                <p class="card-text">Cabai merah kualitas super [1kg].</p>
               </div>
               <p class="card-price text-danger fw-bold">Rp. 7.999</p>
             </div>
@@ -136,5 +115,29 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./libraries/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $('.slider-for').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.slider-for',
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true
+        });
+      });
+    </script>
   </body>
 </html> 

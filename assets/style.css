@@ -1,0 +1,38 @@
+/*PRODUK*/
+
+.detail-product {
+	text-decoration: none;
+	color: black;
+}
+
+.text-deco-none {
+	text-decoration: none;
+	color: black;
+}
+
+.detail-product .card:hover{
+	-webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.container-img-product img {
+	max-width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.container-card-text p {
+	height: 60px;
+}
+
+.slider-for .container-img-detail-product img {
+	width: 100%;
+	height: 460px;
+	object-fit: cover;
+}
+
+.slider-nav .container-img-detail-product img {
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+}
