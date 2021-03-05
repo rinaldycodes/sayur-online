@@ -1,5 +1,6 @@
 /*MOBILE CSS*/
 @import "mobile.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
 
 /*PRODUK*/
 .detail-product {
@@ -48,6 +49,22 @@
 
 form h1.auth {
 	font-size: 22px;
+}
+
+/* CART*/
+
+section.cart img{
+	width: 77px;
+	height: 77px;
+	object-fit: cover;
+}
+
+section.cart p{
+	font-size: 12px;
+}
+
+section.cart input {
+	width: 50px;
 }
 
 
