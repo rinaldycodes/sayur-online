@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./libraries/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./libraries/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <title>Shopping Cart | Mang Agus</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Mang Agus</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Konfirmasi Pembayaran</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="btn btn-sm btn-primary mb-2" role="button" href="./login.html">Masuk</a>
+              <a class="btn btn-sm btn-secondary mb-2" role="button" href="./register.html">Daftar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="container mt-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="cart.html">Shopping Cart</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+        </ol>
+      </nav>
+    </header>
+
+    <main class="checkout-detail-page mb-5 container">
+        <div class="row">
+            <div class="col-md-6 mb-5">
+                <h5 class="text-uppercase">Pengiriman</h5>
+                <hr>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="full_name">Nama Lengkap <span class="text-danger">*</span></label>
+                        <input type="text" id="full_name" name="full_name" required class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="address">Alamat Lengkap <span class="text-danger">*</span></label>
+                        <textarea name="address" id="address" cols="15" rows="5" required class="form-control"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="city">Kota <span class="text-danger">*</span></label>
+                        <select name="city" id="city" class="form-control">
+                            <option value="bekasi">Bekasi</option>
+                            <option value="jakarta">Jakarta</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="fw-bold" for="telp">NO. HP / Whatsapp <span class="text-danger">*</span></label>
+                        <input type="text" id="telp" name="telp" required class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="text-muted" for="note">Catatan untuk toko</label>
+                        <textarea name="note" id="note" cols="15" rows="5" required class="form-control"></textarea>
+                    </div>
+            </div>
+
+            <div class="col-md-6 bg-light">
+                <div class="card card-body">
+                    <h5 class="text-uppercase">Pesanan</h5>
+                    <div class="row mb-3">
+                    <hr>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Produk</th>
+                                    <th class="text-center">   Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- produk -->
+                                <tr>
+                                    <td>
+                                        Sayuran instant siap masak
+                                        <small class="text-muted fw-bold">x 2</small>
+                                    </td>
+                                    <td class="price-item fw-bold text-center">
+                                        Rp.16.000
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Sop Jamur siap masak
+                                        <small class="text-muted fw-bold">x 2</small>
+                                    </td>
+                                    <td class="price-item fw-bold text-center">
+                                        Rp.15.000
+                                    </td>
+                                </tr>
+                                <!-- / produk -->
+
+                                <tr>
+                                    <td class="text-muted">Subtotal</td>
+                                    <td class="text-center fw-bold">Rp.31.000</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-muted">Total</td>
+                                    <td class="text-center fw-bold">Rp.31.000</td>
+                                </tr>
+                            </tbody>
+                        
+                        </table>
+
+                        <div class="container-radio">
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="type_payment" id="flexRadioDefault1">
+                                <label class="form-check-label fw-bold" for="flexRadioDefault1">
+                                  Bank BCA 
+                                </label> <br>
+                                <small class="text-muted">
+                                   <span class="fw-bold">Mang Agus</span> <br>
+                                   <span class="fw-bold">No. Rek: 123-456-789</span>
+                                </small>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="type_payment" id="flexRadioDefault1">
+                                <label class="form-check-label fw-bold" for="flexRadioDefault1">
+                                  Bank Mandiri 
+                                </label> <br>
+                                <small class="text-muted">
+                                   <span class="fw-bold">Mang Agus</span> <br>
+                                   <span class="fw-bold">No. Rek: 123-456-789</span>
+                                </small>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="type_payment" id="flexRadioDefault1">
+                                <label class="form-check-label fw-bold" for="flexRadioDefault1">
+                                  COD
+                                </label> <br>
+                                <small class="text-muted">
+                                   Pembayaran di tempat.
+                                </small>
+                            </div>
+
+                           
+                        </div>
+
+                        <div class="button-group text-center">
+                            <a href="./order-complete.html" class="btn btn-primary">SELESAI BELANJA</a>
+                            <p class="mt-3 text-muted fw-lighter">Segera melakukan Pembayaran dan Konfirmasi Pembayaran</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Peta Lokasi</h5>
+          <div class="peta-lokasi">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5744264923968!2d107.05979972914623!3d-6.224421366519381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698f24045b5357%3A0xe41cf26af0c7542e!2sJl.%20Elang%202%20No.23%2C%20Mangunjaya%2C%20Kec.%20Tambun%20Sel.%2C%20Bekasi%2C%20Jawa%20Barat%2017510!5e0!3m2!1sid!2sid!4v1614789446802!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5>Kontak</h5>
+          <div class="Kontak">
+           <ul>
+             <li>Bekasi, Tambun Selatan, Depan Yakdi</li>
+             <li>WA: 0882-123-456</li>
+           </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <div class="text-center bg-light">
+        <p>Sayur Mang Agus Bekasi supported by RinaldyCodes &copy 2021</p>
+      </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./libraries/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $('.slider-for').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.slider-for',
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true
+        });
+      });
+    </script>
+  </body>
+</html> 

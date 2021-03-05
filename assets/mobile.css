@@ -1,8 +1,26 @@
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
+@media (max-width: 576px) { 
 	.slider-for .container-img-detail-product img {
 		width: 100%;
 		height: 320px;
 		object-fit: cover;
 	} 
+
+
+	/* CART*/
+
+	section.cart img{
+		width: 77px;
+		height: 77px;
+		object-fit: cover;
+	}
+
+	section.cart p, section.cart small{
+		font-size: 12px;
+	}
+
+	section.cart input {
+		width: 50px;
+	}
+
 }

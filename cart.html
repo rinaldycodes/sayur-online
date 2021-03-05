@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./libraries/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./assets/style.css">
 
-    <title>Home | Mang Agus</title>
+    <title>Shopping Cart | Mang Agus</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,8 +35,8 @@
           </ul>
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="btn btn-sm btn-primary mb-2" role="button" href="#">Masuk</a>
-              <a class="btn btn-sm btn-secondary mb-2" role="button" href="#">Daftar</a>
+              <a class="btn btn-sm btn-primary mb-2" role="button" href="./login.html">Masuk</a>
+              <a class="btn btn-sm btn-secondary mb-2" role="button" href="./register.html">Daftar</a>
             </li>
           </ul>
         </div>
@@ -52,10 +52,11 @@
       </nav>
     </header>
 
-    <main class="cart-page">
+    <main class="cart-page mb-5">
       <section class="container cart mb-3">
-        <div class="row">
-          <div class="col-md-6 d-md-none">
+        <div class="row mb-3">
+          <!-- mobile cart -->
+          <div class="col-md-7 d-lg-none">
             <table class="table">
               <thead>
                 <tr>
@@ -66,25 +67,197 @@
               <tbody>
                 <tr>
                   <td class="row">
-                    <div class="col-2">
+                    <div class="col-1">
                       <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-x"></i></a>
                     </div>
                     <div class="col-4">
                       <img src="https://source.unsplash.com/500x500/?vegetable,buah" alt="">
                     </div>
                     <div class="col">
-                      <p>Sayuran lengkap instant siap masak</p>
-                      <small> 1 x <b>Rp.7.999</b></small>
+                      <p>
+                        Sayuran lengkap instant siap masak
+                      </p>
+                      <small>
+                        1 x <b>Rp.7.999</b>
+                      </small>
+                      
                     </div>
                   </td>
                   <td>
-                    <input type="number">
+                    <input type="number" min="1">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="row">
+                    <div class="col-1">
+                      <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-x"></i></a>
+                    </div>
+                    <div class="col-4">
+                      <img src="https://source.unsplash.com/500x500/?vegetable,buah" alt="">
+                    </div>
+                    <div class="col">
+                      <p>
+                        Sayuran lengkap instant siap masak
+                      </p>
+                      <small>
+                        1 x <b>Rp.7.999</b>
+                      </small>
+                      
+                    </div>
+                  </td>
+                  <td>
+                    <input type="number" min="1">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="row">
+                    <div class="col-1">
+                      <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-x"></i></a>
+                    </div>
+                    <div class="col-4">
+                      <img src="https://source.unsplash.com/500x500/?vegetable,buah" alt="">
+                    </div>
+                    <div class="col">
+                      <p>
+                        Sayuran lengkap instant siap masak
+                      </p>
+                      <small>
+                        1 x <b>Rp.7.999</b>
+                      </small>
+                      
+                    </div>
+                  </td>
+                  <td>
+                    <input type="number" min="1">
+                  </td>
+                </tr>
+                
+                
+              </tbody>      
+            </table>
+          </div>
+          <!-- /mobile cart -->
+
+          <!-- desktop cart -->
+          <div class="col-md-8 d-none d-lg-block">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Produk</th>
+                  <th>Harga</th>
+                  <th>Jumlah</th>
+                  <th>Subtotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="row">
+                    <div class="col-2">
+                      <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-x"></i></a>
+                    </div>
+                    <div class="col-3">
+                      <img src="https://source.unsplash.com/500x500/?vegetable,buah" alt="">
+                    </div>
+                    <div class="col">
+                      <p>
+                        Sayuran lengkap instant siap masak
+                      </p>
+                    </div>
+                  </td>
+                  <td>
+                    <b>Rp.7.999</b>
+                  </td>
+                  <td>
+                    <input type="number" min="1" value="2">
+                  </td>
+                  <td>
+                    <b>Rp.16.000</b>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="row">
+                    <div class="col-2">
+                      <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-x"></i></a>
+                    </div>
+                    <div class="col-3">
+                      <img src="https://source.unsplash.com/500x500/?vegetable,buah" alt="">
+                    </div>
+                    <div class="col">
+                      <p>
+                        Sayuran lengkap instant siap masak
+                      </p>
+                    </div>
+                  </td>
+                  <td>
+                    <b>Rp.7.999</b>
+                  </td>
+                  <td>
+                    <input type="number" min="1" value="2">
+                  </td>
+                  <td>
+                    <b>Rp.16.000</b>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="row">
+                    <div class="col-2">
+                      <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-x"></i></a>
+                    </div>
+                    <div class="col-3">
+                      <img src="https://source.unsplash.com/500x500/?vegetable,buah" alt="">
+                    </div>
+                    <div class="col">
+                      <p>
+                        Sayuran lengkap instant siap masak
+                      </p>
+                    </div>
+                  </td>
+                  <td>
+                    <b>Rp.7.999</b>
+                  </td>
+                  <td>
+                    <input type="number" min="1" value="2">
+                  </td>
+                  <td>
+                    <b>Rp.16.000</b>
                   </td>
                 </tr>
               </tbody>      
             </table>
           </div>
+          <!-- /desktop cart -->
+
+          <div class="col mb-3">
+            <b class="text-uppercase">Total Keranjang</b>
+            <hr>
+              <table class="table">
+                <tr>
+                  <td class="text-muted">Subtotal</td>
+                  <td class="text-center fw-bold">Rp.12301</td>
+                </tr>
+                <tr>
+                  <td class="text-muted">Total</td>
+                  <td class="text-center fw-bold">Rp.12301</td>
+                </tr>
+              </table>
+
+              <div class="mb-3">
+                <a href="./checkout-detail.html" class="text-uppercase btn btn-primary form-control">Selesaikan pesanan</a>
+              </div>
+      
+              <div class="mb-3">
+                <a href="./index.html" class="text-uppercase btn btn-outline-primary form-control">lanjutkan belanja</a>
+              </div>
+          </div>
         </div>
+
+        
+
+        
       </section>
     </main>
 

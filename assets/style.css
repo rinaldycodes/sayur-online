@@ -59,12 +59,19 @@ section.cart img{
 	object-fit: cover;
 }
 
-section.cart p{
-	font-size: 12px;
+section.cart p, section.cart small{
+	font-size: 15px;
 }
 
 section.cart input {
 	width: 50px;
+}
+
+/* order-complete */
+
+img.order-complete {
+	width: 150px;
+	height: auto;
 }
 
 
